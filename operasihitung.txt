@@ -1,0 +1,29 @@
+numa=int(input("Masukkan bilangan pertama: "))
+numb=int(input("Masukkan bilangan kedua: "))
+
+def add(numa,numb):
+	return numa+numb
+def subtract(numa,numb):
+	return numa-numb
+def multiply(numa,numb):
+	return numa*numb
+def divide(numa,numb):
+	return numa/numb
+print("Pilih Operasi hitung.")
+print("a.Penjumlahan")
+print("b.Pengurangan")
+print("c.Perkalian")
+print("d.Pembagian")
+
+choice=input("Masukkan pilihan(a/b/c/d): ")
+
+if choice=='a':
+	print(numa,"+",numb,"=",add(numa,numb))
+elif choice=='b':	
+	print(numa,"-",numb,"=",subtract(numa,numb))
+elif choice=='c':
+	print(numa,"*",numb,"=",multiply(numa,numb))
+elif choice=='d':
+	print(numa,"/",numb,"=",divide(numa,numb))
+else:
+	print("Input salah")

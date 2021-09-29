@@ -1,0 +1,13 @@
+batas_bawah=1
+batas_atas=10
+print("Batas atas dan bawah")
+batas_atas=int(input("Masukkan batas atas: "))
+batas_bawah=int(input("Masukkan batas bawah: "))
+print("Bilangan prima antara",batas_bawah,"and",batas_atas,":")
+for num in range(batas_bawah,batas_atas+1):
+	if num>1:
+		for i in range(2,num):
+			if(num%i)==0:
+				break
+		else:
+			print(num)
